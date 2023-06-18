@@ -10,6 +10,7 @@
 	import RemoveThing from './RemoveThing.svelte';
 	import RandomNumber from './RandomNumber.svelte';
 	import MouseMove from './MouseMove.svelte';
+	import OneClickButton from './OneClickButton.svelte';
 
 	const pkg = {
 		name: 'svelte',
@@ -41,5 +42,7 @@
 	<RandomNumber />
 	<hr />
 	<MouseMove />
+	<hr />
+	<OneClickButton />
 	<hr />
 </section>
