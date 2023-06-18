@@ -7,6 +7,7 @@
 	import ToggleButton from './ToggleButton.svelte';
 	import WhatNumber from './WhatNumber.svelte';
 	import FamousCats from './FamousCats.svelte';
+	import RemoveThing from './RemoveThing.svelte';
 
 	const pkg = {
 		name: 'svelte',
@@ -38,4 +39,7 @@
 	<hr />
 
 	<FamousCats />
+	<hr />
+
+	<RemoveThing />
 </section>
