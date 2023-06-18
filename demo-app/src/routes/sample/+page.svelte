@@ -1,29 +1,33 @@
 <!-- https://svelte.dev/tutorial/updating-arrays-and-objects -->
 <script>
-	let count = 0;
+	import CountNumber from './CountNumber.svelte';
+	import AddNumber from './AddNumber.svelte';
+	import Nested from './Nested.svelte';
+	import Info from './Info.svelte';
+	import ToggleButton from './ToggleButton.svelte';
 
-	function handleClick() {
-		count += 1;
-	}
-
-	let numbers = [1, 2, 3, 4];
-
-	function addNumber() {
-		// numbers = [...numbers, numbers.length + 1];
-		numbers[numbers.length] = numbers.length + 1;
-	}
-	$: sum = numbers.reduce((t, n) => t + n, 0);
+	const pkg = {
+		name: 'svelte',
+		version: 3,
+		speed: 'blazing',
+		website: 'https://svelte.dev'
+	};
 </script>
 
 <section>
-	<button on:click={handleClick}>
-		Clicked {count}
-		{count === 1 ? 'time' : 'times'}
-	</button>
+	<CountNumber />
+	<hr />
 
-	<div>
-		<p>{numbers.join(' + ')} = {sum}</p>
+	<AddNumber />
+	<hr />
 
-		<button on:click={addNumber}> Add a number </button>
-	</div>
+	<Nested answer={42} />
+	<hr />
+
+	<!-- Spread props -->
+	<!-- <Info name={pkg.name} version={pkg.version} speed={pkg.speed} website={pkg.website} /> -->
+	<Info {...pkg} />
+	<hr />
+
+	<ToggleButton />
 </section>
