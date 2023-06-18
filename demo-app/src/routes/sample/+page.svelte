@@ -9,6 +9,7 @@
 	import FamousCats from './FamousCats.svelte';
 	import RemoveThing from './RemoveThing.svelte';
 	import RandomNumber from './RandomNumber.svelte';
+	import MouseMove from './MouseMove.svelte';
 
 	const pkg = {
 		name: 'svelte',
@@ -21,29 +22,24 @@
 <section>
 	<CountNumber />
 	<hr />
-
 	<AddNumber />
 	<hr />
-
 	<Nested answer={42} />
 	<hr />
-
 	<!-- Spread props -->
 	<!-- <Info name={pkg.name} version={pkg.version} speed={pkg.speed} website={pkg.website} /> -->
 	<Info {...pkg} />
 	<hr />
-
 	<ToggleButton />
 	<hr />
-
 	<WhatNumber />
 	<hr />
-
 	<FamousCats />
 	<hr />
-
 	<RemoveThing />
 	<hr />
-
 	<RandomNumber />
+	<hr />
+	<MouseMove />
+	<hr />
 </section>
