@@ -8,6 +8,7 @@
 	import WhatNumber from './WhatNumber.svelte';
 	import FamousCats from './FamousCats.svelte';
 	import RemoveThing from './RemoveThing.svelte';
+	import RandomNumber from './RandomNumber.svelte';
 
 	const pkg = {
 		name: 'svelte',
@@ -42,4 +43,7 @@
 	<hr />
 
 	<RemoveThing />
+	<hr />
+
+	<RandomNumber />
 </section>
