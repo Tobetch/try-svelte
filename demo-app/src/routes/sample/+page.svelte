@@ -5,6 +5,7 @@
 	import Nested from './Nested.svelte';
 	import Info from './Info.svelte';
 	import ToggleButton from './ToggleButton.svelte';
+	import WhatNumber from './WhatNumber.svelte';
 
 	const pkg = {
 		name: 'svelte',
@@ -30,4 +31,7 @@
 	<hr />
 
 	<ToggleButton />
+	<hr />
+
+	<WhatNumber />
 </section>
