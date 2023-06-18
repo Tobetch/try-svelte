@@ -6,6 +6,7 @@
 	import Info from './Info.svelte';
 	import ToggleButton from './ToggleButton.svelte';
 	import WhatNumber from './WhatNumber.svelte';
+	import FamousCats from './FamousCats.svelte';
 
 	const pkg = {
 		name: 'svelte',
@@ -34,4 +35,7 @@
 	<hr />
 
 	<WhatNumber />
+	<hr />
+
+	<FamousCats />
 </section>
